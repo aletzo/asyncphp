@@ -14,13 +14,17 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 
 		<style>
+            :root {
+                --lm-green: #4df7b9;
+            }
+
             .reveal-viewport {
 		        background: #fff;
             }
             .reveal .controls,
-            .reveal .progress,
-            .reveal .text {
-                color: #4df7b9 !important;
+            .reveal .lm-green,
+            .reveal .progress {
+                color: var(--lm-green) !important;
             }
             .reveal p {
                 color: #555 !important;
@@ -29,22 +33,44 @@
                 font-size: 0.4em;
             }
 
+            .lm-green {
+                color: var(--lm-green) !important;
+            }
+
+            .text-large {
+                font-size: 1.5em;
+            }
+
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-				    <p>Async PHP</p>
+				    <p class="lm-green text-large">Async PHP</p>
 				</section>
+
 				<section>
-				    <p>What</p>
+				    <p class="lm-green text-large">What</p>
+
+				    <p class="fragment">Promises</p>
 				</section>
+
 				<section>
-				    <p>Why</p>
+				    <p class="lm-green text-large">Why</p>
+
+				    <p class="fragment">Speed</p>
 				</section>
+
 				<section>
-				    <p>How</p>
+				    <p class="lm-green text-large">How</p>
+
+				    <p class="fragment">Library</p>
+				    <p class="fragment">Server</p>
+				</section>
+
+				<section>
+				    <p class="lm-green text-large">Demo</p>
 				</section>
 			</div>
 		</div>
